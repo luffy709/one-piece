@@ -1,0 +1,100 @@
+@import ../variables
+@import ../breakpoint
+
+.forum
+    background: $primary
+
+    &__back_link
+        a
+            color: $yellow
+            font-size: 1.7rem
+    &__modal
+        max-width: 40rem
+
+        &__content
+            margin: 0
+            border: .25rem solid $orange
+            border-radius: 0
+
+            &__header
+                background-color: $orange
+
+                &__title
+                    font-size: 1.7rem
+                    font-weight: 600
+
+            &__footer
+                flex-direction: column
+
+                @include medium
+                    flex-direction: row
+
+                & button
+                    flex: 1
+
+    &__banner
+        margin-bottom: 2rem
+        border: .25rem solid $orange
+
+        &__img
+            width: 100%
+
+    &__new_topic
+        margin-bottom: 2rem
+        display: flex
+        justify-content: space-between
+
+        & button
+            height: 4rem
+            width: 100%
+            font-size: 1.3rem
+
+            @include medium
+                width: 15rem
+
+    &__body
+        &__topics
+            border: .25rem solid $orange
+            border-radius: 0
+
+            &__item
+                height: 7rem
+                border-top: .1rem solid $yellow
+                border-radius: 0
+                font-size: 1.2rem
+                font-weight: 600
+
+                @include medium
+                    height: 5rem
+                    font-size: 1.7rem
+
+                & a
+                    text-decoration: none
+                    color: $secondary
+
+        &__item
+            border: .25rem solid $orange
+            border-radius: 0
+
+            &__header
+                height: 5rem
+                display: flex
+                align-items: center
+                background: $orange
+                color: #2d2d2d
+
+                & h2
+                    font-family: OnePiece, Roboto, sans-serif
+                    font-weight: 600
+
+            &__subcategory
+                height: 4rem
+                font-size: 1.2rem
+                font-weight: 600
+
+                & a
+                    text-decoration: none
+                    color: $secondary
+
+.card-header:first-child
+    border-radius: 0

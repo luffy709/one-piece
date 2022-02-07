@@ -1,0 +1,20 @@
+.register {
+  height: 100vh;
+  margin-top: -3rem;
+  background-color: #0549a5;
+}
+.register__card {
+  border: 0.25rem solid #ffb300;
+  border-radius: 0;
+}
+.register__card__header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background: #ffb300;
+  color: #2d2d2d;
+}
+.register__card__header h2 {
+  font-family: OnePiece, Roboto, sans-serif;
+  font-weight: 600;
+}

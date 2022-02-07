@@ -1,0 +1,99 @@
+.room {
+  height: 100vh;
+  margin-top: -3rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #010711;
+}
+@media (min-width: 1280px) {
+  .room {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1280px) {
+  .room__mobile_nav {
+    display: none;
+  }
+}
+.room__sidebar {
+  display: none;
+  height: 100%;
+  width: 15rem;
+  padding: 1rem 0;
+}
+@media (min-width: 1280px) {
+  .room__sidebar {
+    display: block;
+  }
+}
+.room__sidebar__nav {
+  height: 100%;
+}
+.room__sidebar__nav__item {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  background: transparent;
+}
+.room__sidebar__nav__item:hover {
+  background-color: #ffb300;
+}
+.room__sidebar__nav__item:hover a {
+  color: #010711;
+}
+.room__sidebar__nav__item.active {
+  background-color: #ffb300;
+}
+.room__sidebar__nav__item.active a {
+  color: #010711;
+}
+.room__sidebar__nav__item a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.room__body {
+  background-color: #010711;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.room__body__messages {
+  padding: 2rem 0;
+  flex: 1;
+}
+.room__body__messages__list {
+  margin-top: auto;
+}
+.room__body__messages__list__item {
+  background-color: transparent;
+  color: #ffffff;
+}
+.room__body__messages__list__item__user {
+  color: #ffb300;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.room__body__messages__list__item__body {
+  font-size: 1rem;
+}
+.room__body__post {
+  height: 6rem;
+  width: 100%;
+  padding: 1rem;
+}
+.room__body__post__input {
+  height: 4rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+}
+.room__body__post button {
+  width: 14rem;
+}

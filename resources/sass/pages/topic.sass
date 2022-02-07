@@ -1,0 +1,102 @@
+@import ../variables
+@import ../breakpoint
+
+.topic
+    background-color: $primary
+
+    &__back_link
+        a
+            color: $yellow
+            font-size: 1.7rem
+
+    &__modal
+        max-width: 40rem
+
+        &__content
+            margin: 0
+            border: .25rem solid $orange
+            border-radius: 0
+
+            &__header
+                background-color: $orange
+
+                &__title
+                    font-size: 1.7rem
+                    font-weight: 600
+
+            &__footer
+                display: flex
+                flex-direction: column
+
+                @include medium
+                    flex-direction: row
+
+                & button
+                    width: 100%
+
+                    @include medium
+                        flex: 1
+
+    &__sujet
+        border: .25rem solid $orange
+        border-radius: 0
+
+        &__header
+            height: 5rem
+            display: flex
+            align-items: center
+            background: $orange
+            color: #2d2d2d
+
+            &__title
+                font-family: OnePiece, Roboto, sans-serif
+                font-weight: 600
+
+        &__body
+            min-height: 15rem
+
+            &__text
+                font-size: 1.4rem
+
+        &__footer
+            height: 5rem
+
+            &__button
+                height: 100%
+                width: 100%
+                font-size: 1.4rem
+
+                @include medium
+                    width: 14rem
+
+    &__answers
+        &__answer
+            margin-bottom: 2rem
+
+            &__author
+                display: flex
+                flex-direction: column-reverse
+                color: $yellow
+
+                @include medium
+                    flex-direction: row
+                    justify-content: space-between
+
+                &__name
+                    @include medium
+                        font-size: 1.7rem
+                        font-weight: 500
+
+                &__created_at
+
+            &__body
+                min-height: 5rem
+                padding: 1rem 1.7rem
+                background-color: $orange
+                border: .25rem solid $orange
+                box-shadow: .15rem .15rem .25rem #ffffff, -.15rem -.15rem .25rem #ffffff, -.15rem .15rem .25rem #ffffff, .15rem -.15rem .25rem #ffffff
+
+                &__message
+                    margin: 0
+                    font-size: 1.3rem
+                    font-weight: 500

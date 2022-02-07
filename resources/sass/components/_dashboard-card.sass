@@ -1,0 +1,55 @@
+@import ../variables
+@import ../breakpoint
+
+.dashboard-card
+    height: auto
+    width: 100%
+    background-color: #263c64
+    color: #ffffff
+    border-radius: .25rem
+    box-shadow: .1rem .1rem .4rem darken($primary, 15%)
+
+    &__row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        column-gap: 1.5rem
+        margin-bottom: 1rem
+
+    &__button
+        height: 3rem
+        width: 100%
+        position: relative
+        background-color: darken($primary, 22%)
+        color: #ffffff
+        font-size: 1.2rem
+        font-weight: 600
+        border: none
+        transition: background-color .5s
+
+        &:hover
+            background-color: darken($primary, 25%)
+
+    &__header
+        height: 3rem
+        padding: 1rem
+        display: flex
+
+        &__title
+            color: #ffffff
+            font-size: .8rem
+            margin-right: auto
+
+            @include medium
+                font-size: 1rem
+
+        &__delete
+            cursor: pointer
+            transition: color .4s
+
+            &:hover
+                color: lighten($secondary, 10%)
+
+    &__body
+        padding: 1rem
+
+

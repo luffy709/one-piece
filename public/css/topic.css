@@ -1,0 +1,105 @@
+.topic {
+  background-color: #0549a5;
+}
+.topic__back_link a {
+  color: #dfd500;
+  font-size: 1.7rem;
+}
+.topic__modal {
+  max-width: 40rem;
+}
+.topic__modal__content {
+  margin: 0;
+  border: 0.25rem solid #ffb300;
+  border-radius: 0;
+}
+.topic__modal__content__header {
+  background-color: #ffb300;
+}
+.topic__modal__content__header__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.topic__modal__content__footer {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 980px) {
+  .topic__modal__content__footer {
+    flex-direction: row;
+  }
+}
+.topic__modal__content__footer button {
+  width: 100%;
+}
+@media (min-width: 980px) {
+  .topic__modal__content__footer button {
+    flex: 1;
+  }
+}
+.topic__sujet {
+  border: 0.25rem solid #ffb300;
+  border-radius: 0;
+}
+.topic__sujet__header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background: #ffb300;
+  color: #2d2d2d;
+}
+.topic__sujet__header__title {
+  font-family: OnePiece, Roboto, sans-serif;
+  font-weight: 600;
+}
+.topic__sujet__body {
+  min-height: 15rem;
+}
+.topic__sujet__body__text {
+  font-size: 1.4rem;
+}
+.topic__sujet__footer {
+  height: 5rem;
+}
+.topic__sujet__footer__button {
+  height: 100%;
+  width: 100%;
+  font-size: 1.4rem;
+}
+@media (min-width: 980px) {
+  .topic__sujet__footer__button {
+    width: 14rem;
+  }
+}
+.topic__answers__answer {
+  margin-bottom: 2rem;
+}
+.topic__answers__answer__author {
+  display: flex;
+  flex-direction: column-reverse;
+  color: #dfd500;
+}
+@media (min-width: 980px) {
+  .topic__answers__answer__author {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 980px) {
+  .topic__answers__answer__author__name {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}
+.topic__answers__answer__body {
+  min-height: 5rem;
+  padding: 1rem 1.7rem;
+  background-color: #ffb300;
+  border: 0.25rem solid #ffb300;
+  box-shadow: 0.15rem 0.15rem 0.25rem #ffffff, -0.15rem -0.15rem 0.25rem #ffffff, -0.15rem 0.15rem 0.25rem #ffffff, 0.15rem -0.15rem 0.25rem #ffffff;
+}
+.topic__answers__answer__body__message {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}

@@ -1,0 +1,16 @@
+.dashboard-list {
+  border: 0.25rem solid #ffb300;
+  border-radius: 0;
+}
+.dashboard-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-list__item__title {
+  font-size: 1.2rem;
+}
+.dashboard-list__item__delete {
+  color: #a90000;
+  font-size: 1.5rem;
+}

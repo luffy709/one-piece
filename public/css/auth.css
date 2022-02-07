@@ -1,0 +1,20 @@
+.auth {
+  height: 100vh;
+  margin-top: -3rem;
+  background-color: #0549a5;
+}
+.auth__card {
+  border: 0.25rem solid #ffb300;
+  border-radius: 0;
+}
+.auth__card__header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background: #ffb300;
+  color: #2d2d2d;
+}
+.auth__card__header h2 {
+  font-family: OnePiece, Roboto, sans-serif;
+  font-weight: 600;
+}
