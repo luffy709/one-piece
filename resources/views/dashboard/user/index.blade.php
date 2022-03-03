@@ -8,40 +8,42 @@
             <div class="dashboard-user__body__users">
                 <h2>Joueurs</h2>
 
-                @foreach($activeUsers as $user)
-                    @include('dashboard.user.user._active', $user)
+                @foreach($users as $user)
+                    @if($user->status === \App\Utils\UserStatus::$ACTIVE)
+                        @include('dashboard.user.user._active', $user)
+                    @endif
                 @endforeach
             </div>
 
-            @if(!empty($banForumUsers))
-                <h2>Joueurs bannis du forum</h2>
+            <h2>Joueurs bannis du forum</h2>
 
-                <div class="dashboard-user__body__users">
-                    @foreach($banForumUsers as $user)
+            <div class="dashboard-user__body__users">
+                @foreach($users as $user)
+                    @if($user->status === \App\Utils\UserStatus::$BAN_FORUM)
                         @include('dashboard.user.user._ban-forum', $user)
-                    @endforeach
-                </div>
-            @endif
+                    @endif
+                @endforeach
+            </div>
 
-            @if(!empty($banChatUsers))
-                <h2>Joueurs bannis du chat</h2>
+            <h2>Joueurs bannis du chat</h2>
 
-                <div class="dashboard-user__body__users">
-                    @foreach($banChatUsers as $user)
+            <div class="dashboard-user__body__users">
+                @foreach($users as $user)
+                    @if($user->status === \App\Utils\UserStatus::$BAN_CHAT)
                         @include('dashboard.user.user._ban-chat', $user)
-                    @endforeach
-                </div>
-            @endif
+                    @endif
+                @endforeach
+            </div>
 
-            @if(!empty($banUsers))
-                <h2>Joueurs bannis</h2>
+            <h2>Joueurs bannis</h2>
 
-                <div class="dashboard-user__body__users">
-                    @foreach($banUsers as $user)
+            <div class="dashboard-user__body__users">
+                @foreach($users as $user)
+                    @if($user->status === \App\Utils\UserStatus::$ARCHIVED)
                         @include('dashboard.user.user._ban', $user)
-                    @endforeach
-                </div>
-            @endif
+                    @endif
+                @endforeach
+            </div>
         </div>
     </div>
 @endsection

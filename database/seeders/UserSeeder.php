@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
     {
         $superAdministrator = User::factory()->createOne([
             'name' => 'luffy',
-            'email' => 'illan709@hotmail.fr',
+            'email' => 'illan708@hotmail.fr',
             'password' => Hash::make('123456789'),
         ]);
 
@@ -42,7 +42,7 @@ class UserSeeder extends Seeder
 
         $moderator = User::factory()->createOne([
             'name' => 'moderator',
-            'email' => 'modo@outlook.fr',
+            'email' => 'illan709@hotmail.fr',
             'password' => Hash::make('123456789'),
         ]);
 

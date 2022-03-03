@@ -233,6 +233,7 @@ composer require spatie/laravel-permission
 - Faire les vues
 
 ## Formulaire
+
 ### Mise en place
 
 - Générer le controllers
@@ -297,4 +298,4 @@ php artisan make:notification ContactNotification
 ### Mail
 Compte google
 
-Mot de passe dans le .env
+
